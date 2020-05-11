@@ -9,15 +9,3 @@ body #wrapper{
     height: 100%;
     position: fixed;
 }
-
-.centered {
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -100px;
-}
-
-*:focus{
-    outline:none;
-}

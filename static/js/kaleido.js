@@ -25,6 +25,10 @@ function draw() {
     storeRandomPosition();
     //storeMousePosition();
     drawLines();
+
+    fill(255);
+    textSize(24);
+    text("終了＝ウィンドウを閉じる", 15, 30);
 }
 
 function shiftPositionArray() {

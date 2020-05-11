@@ -3,21 +3,25 @@ var sakura = new Array();
 
 function setup() {
     var myCanvas = createCanvas(windowWidth, windowHeight);
+    myCanvas.parent("myContainer");
     colorMode(HSB, 360, 100, 100);
     smooth();
 
     for( var i = 0; i < SAKURA_NUM ;i++ ) {
         sakura.push(new Sakura());
     }
-    noStroke();
 }
 
 function draw() {
     background(255);
+    noStroke();
     for (var i = 0; i < sakura.length;i++) {
         sakura[i].move();
         sakura[i].display();
     }
+    fill(0);
+    textSize(24);
+    text("終了＝ウィンドウを閉じる", 15, 30);
 }
 
 function windowResized() {
